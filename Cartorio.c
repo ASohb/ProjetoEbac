@@ -125,6 +125,7 @@ int main()
 		printf("\t1- Registrar nomes\n"); //  /t da espaço
 		printf("\t2- Consultar nomes\n");
 		printf("\t3- Deletar nomes\n\n");  
+		printf("\t4- Sair do sistema\n\n");  
 		printf("Opção: ");//Fim do menu
 		
 	    scanf("%d", &opcao);  //%d para armazenar uma variável do tipo inteiro
@@ -143,6 +144,11 @@ int main()
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+				printf("Obrigada por utilizar o sistema\n");
+				return 0;
+				break;
 			
 			default://O mesmo que else(senão);
 			printf("Essa opção não esta disponível!\n");
